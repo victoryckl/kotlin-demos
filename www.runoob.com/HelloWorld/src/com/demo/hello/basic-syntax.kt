@@ -168,8 +168,10 @@ fun getStringLength3(obj: Any): Int? {
 //区间是为任何可比较类型定义的，但对于整型原生类型，它有一个优化的实现。
 // 以下是使用区间的一些示例:
 fun rangToTest() {
-    println("-----------")
+    println("rangToTest")
     for (i in 1..4) print(i) // 输出“1234”
+    println()
+    for (i in 1.."哈哈哈".length) print(i) // 输出“123”
     println()
     for (i in 4..1) print(i) // 什么都不输出
     println()
