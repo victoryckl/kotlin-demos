@@ -146,7 +146,7 @@ fun decimalDigitValue(c: Char): Int {
 fun testChar() {
     var c: Char = '1'
     println("testChar")
-    println(c.digitToInt())
+    //println(c.digitToInt())//error in idea2017
     val c2: Char = 'a'
     //println(c2.digitToInt())//Char a is not a decimal digit
 }
