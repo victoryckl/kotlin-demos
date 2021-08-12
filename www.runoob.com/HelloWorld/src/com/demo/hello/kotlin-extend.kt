@@ -99,8 +99,7 @@ fun testStudent3() {
  则必须要重写该方法，使用super范型去选择性地调用父类的实现。
  C 继承自 a() 或 b(), C 不仅可以从 A 或则 B 中继承函数，
  而且 C 可以继承 A()、B() 中共有的函数。
- 此时该函数在中只有一个实现，为了消除歧义，
- 该函数必须调用A()和B()中该函数的实现，并提供自己的实现。
+ 此时该函数在中只有一个实现，为了消除歧义，该函数提供自己的实现。
  */
 open class A {
     open fun f() = println("A.f")
@@ -115,8 +114,8 @@ interface B {
 class C : A(), B {
     override fun f() {
         println("C.f")
-        super<A>.f()//调用A.f()
-        super<B>.f()//调用B.f()
+        //super<A>.f()//调用A.f()
+        //super<B>.f()//调用B.f()
     }
 }
 

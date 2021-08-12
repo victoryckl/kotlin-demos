@@ -68,8 +68,8 @@ class C : A {
 
 class D : A, B {
     override fun foo() {
-        super<A>.foo()
-        super<B>.foo()
+        //super<A>.foo()
+        //super<B>.foo()
     }
 
     override fun bar() {
