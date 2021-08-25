@@ -89,7 +89,11 @@ val lazyValue : String by lazy {
     println("lazy init") // 第一次调用输出，第二次调用不执行
     "Hello"
 }
-
+//同下：
+//val lazyValue : String by lazy({
+//    println("lazy init") // 第一次调用输出，第二次调用不执行
+//    "Hello"
+//})
 
 fun main(args: Array<String>) {
     val c = Base3Impl(1000)
