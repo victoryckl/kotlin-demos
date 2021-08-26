@@ -26,8 +26,21 @@ fun printProduct(arg1: String, arg2: String) {
     }
 }
 
+
+//使用 lambda 表达式来过滤（filter）与映射（map）集合：
+fun testFilter() {
+    println("testFilter")
+    val fruits = listOf("banana", "avocado", "apple", "kiwifruit")
+    fruits.filter { it.startsWith("a") }
+            .sortedBy { it }
+            .map { it.toUpperCase() }
+            .forEach { println(it) }
+}
+
 fun main(args: Array<String>) {
     printProduct("6", "7")
     printProduct("a", "7")
     printProduct("a", "b")
+
+    testFilter()
 }
