@@ -1,6 +1,8 @@
+package d20220423.s1
+
 fun main() {
     println(add2(100, 0))
-    //ollAdd(10000) //栈溢出
+    //d20220423.d1.ollAdd(10000) //栈溢出
 }
 
 fun ollAdd(num:Int):Int {
@@ -8,7 +10,7 @@ fun ollAdd(num:Int):Int {
     if (num == 1) {
         return 1
     } else {
-        return num + ollAdd(num -1)
+        return num + ollAdd(num - 1)
     }
 }
 
