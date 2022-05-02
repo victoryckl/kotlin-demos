@@ -8,7 +8,7 @@ class Tank(override var x : Int, override var y : Int) : View {
     override val width = Config.block
     override val height = Config.block
 
-    val speed = 8
+    private val speed = 8
     var currentDirection = Direction.UP
 
     override fun draw() {

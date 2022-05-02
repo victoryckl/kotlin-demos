@@ -48,10 +48,10 @@ class GameWindow : Window(
     override fun onKeyPressed(event: KeyEvent) {
         println("event.code = ${event.code}")
         when(event.code) {
-            KeyCode.W -> tank.move(Direction.UP)
-            KeyCode.S -> tank.move(Direction.DOWN)
-            KeyCode.A -> tank.move(Direction.LEFT)
-            KeyCode.D -> tank.move(Direction.RIGHT)
+            KeyCode.W,KeyCode.UP -> tank.move(Direction.UP)
+            KeyCode.S,KeyCode.DOWN -> tank.move(Direction.DOWN)
+            KeyCode.A,KeyCode.LEFT -> tank.move(Direction.LEFT)
+            KeyCode.D,KeyCode.RIGHT -> tank.move(Direction.RIGHT)
         }
     }
 
